@@ -1,8 +1,72 @@
+
+About Linux's Dirs
+
 /bin
   存储所有用户的命令文件
 
 /dev
-  存储硬件设备文件。在Linux中，所有的硬件都是文件，需要操作某个硬件就是要操作该硬件对应的文件
-  example：
-    光驱对应的文件是：/dev/cdrom或者/dev/sr0
+  存储硬件设备文件.在Linux中,所有的硬件都是文件,需要操作某个硬件就是要操作该硬件对应的文件
+  example:
+    光驱对应的文件是:/dev/cdrom或者/dev/sr0
+  
+/home
+  用户的家目录,每创建一个用户,都会在该目录下创建一个与用户名同名的文件夹
+    用户登录后,其实就是默认进入到自己的家目录下进行相关操作
+    注意:root超级管理员的家目录在/root里面,而不在/home下
     
+/lib
+  系统库目录,与Windows下的window目录
+
+/media
+  多媒体目录,存放系统媒体文件
+
+/mnt
+  不是必须目录
+  是映射目录,U盘或移动硬盘在Linux下的映射目录,将U盘或移动硬盘映射到该目录以后,读取该目录,就相当于读取U盘活移动硬盘的内容
+  
+/proc
+  内存映射目录
+
+/sbin
+  超级管理员root的命令目录,该目录存储的命令只有root用户能够使用
+  example:
+    关机命令、添加/删除用户等命令
+
+/tmp
+  临时文件目录
+  
+/var
+  可变文件存储目录
+  example:
+    数据库文件(mysql/data)等
+    可以布局网站:
+    /var/www/shop
+    /var/www/cms
+    
+/boot
+  存储系统引导文件目录
+  
+/etc
+  配置文件目录,存储系统的配置文件,存储系统服务的配置文件,自己安装的程序的配置文件等
+  example:
+    用户配置文件,passwd、shadow等
+  
+/lost+found
+  失物招领,存储系统非正常关机的一些文件,系统自动调用,无需我们干预
+  
+/opt
+  存储第三方程序文件的目录
+
+/root
+  root用户的家目录
+
+/usr
+  软件的默认安装目录,与Windows下的Program Files相似
+  example:
+    /usr/local/apache
+    /usr/local/mysql
+    /usr/local/php
+    /usr/local/redis
+    /usr/local/memcache
+  
+  
